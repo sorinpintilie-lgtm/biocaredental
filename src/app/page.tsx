@@ -722,6 +722,27 @@ export default function Home() {
               <div className="text-center text-sm text-[color:var(--muted)] md:text-right">
                 <p>© {new Date().getFullYear()} BioCare Dental. Toate drepturile rezervate.</p>
                 <p className="mt-1">București, Sector 2 • {contacts.phone1}</p>
+
+                <div className="mt-3 flex items-center justify-center gap-2 md:justify-end">
+                  <span className="text-xs font-semibold tracking-tight text-[color:var(--muted)]">
+                    Powered by
+                  </span>
+                  <a
+                    href="https://sky.ro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-lg px-2 py-1 transition hover:bg-black/5"
+                    aria-label="Sky.ro"
+                  >
+                    <Image
+                      src="/skyro_logo_wide.png"
+                      alt="sky.ro"
+                      width={92}
+                      height={24}
+                      className="h-auto w-[92px] object-contain"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

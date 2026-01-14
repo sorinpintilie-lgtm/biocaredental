@@ -5,11 +5,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
 import { Counter } from "@/components/Counter";
-import { InfiniteCarousel } from "@/components/InfiniteCarousel";
-import { Header } from "@/components/Header";
+  import { InfiniteCarousel } from "@/components/InfiniteCarousel";
+  import { Header } from "@/components/Header";
+  import { StickyNote } from "@/components/StickyNote";
 import type { LucideIcon } from "lucide-react";
 import {
-  Clock,
   ShieldCheck,
   Microscope,
   Scissors,
@@ -171,6 +171,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       <Header phone={contacts.phone1} />
+      <StickyNote hideButtonOnMobile />
       
       {/* Background decorative elements - positioned between sections */}
       <div className="pointer-events-none fixed left-0 top-[120vh] z-0 h-[600px] w-full opacity-20">
@@ -456,7 +457,7 @@ export default function Home() {
                     ))}
                   </div>
                   <p className="mt-4 text-base leading-7 text-[color:var(--muted)]">
-                    "{testimonial.text}"
+                    &ldquo;{testimonial.text}&rdquo;
                   </p>
                   <p className="mt-4 font-bold text-[color:var(--foreground)]">
                     — {testimonial.name}

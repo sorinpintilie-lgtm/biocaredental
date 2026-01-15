@@ -14,7 +14,7 @@
   --blue-green: #37b4b5;
 
   /* Height of the fixed promo bar (excluding iOS safe-area inset). */
-  --promo-bar-height: 44px;
+  --promo-bar-height: 40px;
 }
 
 @theme inline {

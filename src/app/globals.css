@@ -12,6 +12,9 @@
   --blue-primary: #316ea4;
   --blue-light: #37b4b5;
   --blue-green: #37b4b5;
+
+  /* Height of the fixed promo bar (excluding iOS safe-area inset). */
+  --promo-bar-height: 44px;
 }
 
 @theme inline {
@@ -29,6 +32,9 @@ body {
     var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+
+  /* Prevent content from being hidden under the fixed promo bar (and iOS safe-area). */
+  padding-top: calc(var(--promo-bar-height) + env(safe-area-inset-top));
 }
 
 @layer base {

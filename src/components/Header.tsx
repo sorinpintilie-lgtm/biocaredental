@@ -34,7 +34,7 @@ export function Header({ phone }: HeaderProps) {
           opacity: headerOpacity,
           backdropFilter: `blur(${headerBlur}px)`,
         }}
-        className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
+        className={`fixed left-0 right-0 top-[calc(var(--promo-bar-height)+env(safe-area-inset-top))] z-50 transition-all duration-300 ${
           isScrolled ? "translate-y-0" : "-translate-y-full"
         }`}
       >

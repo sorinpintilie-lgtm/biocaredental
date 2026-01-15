@@ -16,17 +16,17 @@ export function PromoBar() {
       {/* Safe-area padding creates space above the fixed bar on iOS */}
       <div className="pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex h-[var(--promo-bar-height)] max-w-6xl items-center justify-between gap-3 px-4">
-          <p className="min-w-0 text-[13px] font-normal leading-none text-[#1F2933] sm:text-sm">
+          <p className="min-w-0 flex-1 text-[13px] font-normal leading-none text-[#1F2933] sm:flex-none sm:text-sm">
             {/* Mobile: keep it short so it fits on a single line */}
             <span className="block sm:hidden">
-              <span className="flex min-w-0 items-center justify-between gap-2 text-[12px]">
-                <span className="min-w-0 flex-1 truncate text-left">
+              <span className="grid w-full min-w-0 grid-cols-[1fr_auto_1fr] items-center gap-2 text-[12px]">
+                <span className="min-w-0 truncate text-left">
                   Concept demo
                 </span>
-                <span className="min-w-0 flex-1 truncate text-center">
+                <span className="whitespace-nowrap text-center">
                   Dezvoltat de sky.ro
                 </span>
-                <span className="shrink-0 text-right">
+                <span className="whitespace-nowrap text-right">
                   <a
                     href="tel:+40720088880"
                     className="underline underline-offset-2 decoration-[#1F2933]/50 hover:decoration-[#1F2933]"

@@ -16,7 +16,7 @@ export function PromoBar() {
       {/* Safe-area padding creates space above the fixed bar on iOS */}
       <div className="pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex h-[var(--promo-bar-height)] max-w-6xl items-center justify-between gap-3 px-4">
-          <p className="min-w-0 text-xs font-semibold tracking-tight text-[color:var(--muted)]">
+          <p className="min-w-0 text-sm font-bold tracking-tight text-[color:var(--foreground)] sm:text-base">
             <span className="block truncate">
               Concept demo • Conținut orientativ • Dezvoltat de sky.ro
             </span>

@@ -37,16 +37,29 @@ export function PromoBar() {
               </span>
             </span>
 
-            {/* Desktop/tablet: full disclaimer + contact */}
-            <span className="hidden truncate sm:block">
-              Concept demo • Conținut orientativ • Dezvoltat de sky.ro •{" "}
+            {/* Desktop/tablet: full disclaimer + contact (single line, consistent spacing) */}
+            <span className="hidden min-w-0 items-center whitespace-nowrap sm:flex">
+              <span className="min-w-0 truncate">Concept demo</span>
+              <span className="mx-2 opacity-70" aria-hidden>
+                •
+              </span>
+              <span className="opacity-90">Conținut orientativ</span>
+              <span className="mx-2 opacity-70" aria-hidden>
+                •
+              </span>
+              <span className="opacity-90">Dezvoltat de sky.ro</span>
+              <span className="mx-2 opacity-70" aria-hidden>
+                •
+              </span>
               <a
                 href="mailto:dan.trifan@sky.ro"
                 className="underline underline-offset-2 decoration-[#1F2933]/50 hover:decoration-[#1F2933]"
               >
                 dan.trifan@sky.ro
               </a>
-              {" "}•{" "}
+              <span className="mx-2 opacity-70" aria-hidden>
+                •
+              </span>
               <a
                 href="tel:+40720088880"
                 className="underline underline-offset-2 decoration-[#1F2933]/50 hover:decoration-[#1F2933]"
@@ -58,7 +71,7 @@ export function PromoBar() {
 
           <a
             href="mailto:dan.trifan@sky.ro"
-            className="hidden shrink-0 rounded-md border border-[#2F80ED]/55 px-3 py-1.5 text-xs font-normal text-[#2F80ED] transition hover:bg-[#2F80ED]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2F80ED]/40 sm:inline-flex"
+            className="hidden shrink-0 rounded-md bg-[#2F80ED] px-3 py-1.5 text-xs font-normal text-white transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2F80ED]/40 sm:inline-flex"
           >
             Contact
           </a>

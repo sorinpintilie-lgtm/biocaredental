@@ -18,14 +18,23 @@ export function PromoBar() {
         <div className="mx-auto flex h-[var(--promo-bar-height)] max-w-6xl items-center justify-between gap-3 px-4">
           <p className="min-w-0 text-[13px] font-normal leading-none text-[#1F2933] sm:text-sm">
             {/* Mobile: keep it short so it fits on a single line */}
-            <span className="block truncate sm:hidden">
-              Concept demo{" "}Dezvoltat de sky.ro{" "}
-              <a
-                href="tel:+40720088880"
-                className="underline underline-offset-2 decoration-[#1F2933]/50 hover:decoration-[#1F2933]"
-              >
-                +4 0720 088 880
-              </a>
+            <span className="block sm:hidden">
+              <span className="flex min-w-0 items-center justify-between gap-2 text-[12px]">
+                <span className="min-w-0 flex-1 truncate text-left">
+                  Concept demo
+                </span>
+                <span className="min-w-0 flex-1 truncate text-center">
+                  Dezvoltat de sky.ro
+                </span>
+                <span className="shrink-0 text-right">
+                  <a
+                    href="tel:+40720088880"
+                    className="underline underline-offset-2 decoration-[#1F2933]/50 hover:decoration-[#1F2933]"
+                  >
+                    +4 0720 088 880
+                  </a>
+                </span>
+              </span>
             </span>
 
             {/* Desktop/tablet: full disclaimer + contact */}
